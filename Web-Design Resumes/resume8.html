@@ -4,24 +4,31 @@
     <head>
 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">  <!--Set responsive viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <!--Set responsive viewport-->
         <title>WD Resume</title>    <!--The title of the page is "WD Resume" and will display on the tab-->
-        <link rel="stylesheet" type="text/css" href="css/css/stylesheet.css">   <!--link html file to stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">   <!--link html file to stylesheet-->
         
     </head>
 
     <body>
      
-        <header id="heading">   <!--gives header a unique id to identify it in the stylesheet when linking-->
-            <img class="profile" 
-                src="images/OS profile.jpg"
-                alt="Otshepeng Setuke profile">
-                
-            <h1 class="h1">Otshepeng Setuke</h1>    <!--class gives identifier for CSS to easily access elements from the stylesheet with class selectors-->
-            <p>A young black woman who strives for perfection but settles for excellence looking to work in an environment that helps me enhance my professional skillset and overcome challenges.</p>
+        <div>
+            <!--div has been successfully made responsive using css elements of media queries for changing background image-->
 
-        </header>   <!--closes header tag-->
+            <header id="heading">   <!--gives header a unique id to identify it in the stylesheet when linking-->
+                
+                <div id="background"></div>
+                
+                <img class="profile" 
+                    src="images/OS profile.jpg"
+                    alt="Otshepeng Setuke profile">
+                    
+                <h1 class="h1">Otshepeng Setuke</h1>    <!--class gives identifier for CSS to easily access elements from the stylesheet with class selectors-->
+                <p>A young black woman who strives for perfection but settles for excellence looking to work in an environment that helps me enhance my professional skillset and overcome challenges.</p>
+
+            </header>   <!--closes header tag-->
     
+        </div>  <!--closes div tag-->
 
 <main class="main">
 
@@ -29,14 +36,16 @@
 
         <nav>
 
+            <!--this div has been successfully made responsive using css-->
+
             <h2>Menu</h2>
 
             <ul class="nav-menu">
-                <li>    <a href="#introduction">Introduction</a></li>
-                <li>    <a href="#education">Education</a></li>
-                <li>    <a href="#experience">Experience</a></li>
-                <li>    <a href="#skills">Skills</a></li>
-                <li>    <a href="#interests">Interests</a></li>
+                <li class="item">    <a href="#introduction">Introduction</a></li>
+                <li class="item">    <a href="#education">Education</a></li>
+                <li class="item">    <a href="#experience">Experience</a></li>
+                <li class="item">    <a href="#skills">Skills</a></li>
+                <li class="item">    <a href="#interests">Interests</a></li>
 
             </ul>
         </nav>

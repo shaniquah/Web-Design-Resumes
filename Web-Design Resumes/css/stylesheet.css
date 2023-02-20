@@ -30,9 +30,10 @@ body {
 }
 
 header {
-text-align: center;
-justify-content: center;
-text-shadow: 1.5px 1px 10px rgb(4, 238, 255);
+  text-align: center;
+  justify-content: center;
+  color: rgb(23, 33, 33);
+  text-shadow: 1.5px 1px 10px rgb(4, 238, 255);
 }
 
 #heading {
@@ -44,13 +45,27 @@ text-shadow: 1.5px 1px 10px rgb(4, 238, 255);
   background-attachment:local;  /*background only scrolls with element's contents*/
   background-size: 150px; /*specify size of background image*/
   padding-bottom: 0.5rem;
+  border-bottom: 5px solid rgb(7, 116, 116);  /*add subtle bottom border to melt into the sidebar when background is an image*/
 }
 
-@media (max-width:480px) {
+@media only screen and (min-width:600px) {
   #heading {
-    background-image: url(images/);
+    background-image: url(images/MyBackground-1.png);
   }
 }
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  #heading {
+    background-image: url(images/MyBackground-2.png);
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  #heading {
+    background-image: url(images/MyBackground-3.png);
+  }
+}
+
 
 
 .profile {
@@ -74,17 +89,68 @@ footer {
 }
 
 #sidebar {
-  width: 20%;
   color: #ffffff;
-  background-color: rgb(122, 228, 52);
-  padding: 1rem;
+  background-color: rgb(48, 58, 41);
+  padding: 2px;
+  margin:0px;
+  justify-content: space-between;
+  align-items:center;
+  text-align:justify;
+  padding: 14px 16px;
+  float: left;
+  position:top;
+  width:fit-content;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media only screen and (max-width:767px) {
+  #sidebar {
+    list-style-type: none;
+    background-color: #343330;
+    background-image: linear-gradient(rgb(11, 118, 113), #343330);
+  }
+
+  .nav-menu li a {
+    display:block;
+    padding: 15px 5px;
+    color:lightblue;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  #sidebar {
+    background-color: #343330;
+    background-image: linear-gradient(rgb(11, 118, 113), forestgreen, #343330);
+  }
+
+  .nav-menu li a {
+    display:block;
+    padding: 15px 5px;
+    color:rgb(117, 232, 252);
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  #sidebar {
+    list-style-type: none;
+    background-color: #343330;
+    background-image: linear-gradient(rgb(11, 118, 113), rgb(1, 97, 1), rgb(2, 122, 122), #343330);
+  }
+
+  .nav-menu li a {
+    display:block;
+    padding: 15px 5px;
+    color:rgb(171, 251, 208);
+  }
 }
 
 .nav-menu {
   list-style-type: none;
-  line-height: 25px;
+  display: block;
+  line-height: 50px;
   margin: 0%;
-  padding: 0%;
+  padding: 20px 10px;
 }
 
 .icons {
